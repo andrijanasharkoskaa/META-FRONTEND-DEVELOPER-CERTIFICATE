@@ -11,13 +11,14 @@ header {
 h1 {
   font-size: 3rem;
   padding: 2rem;
-  color: rgb(76, 75, 75);
 }
+
 h2 {
   font-size: 2rem;
   padding: 2rem;
-  color: rgb(88, 88, 88);
+  color: yellow;
 }
+
 header > img {
   display: block;
   margin-left: auto;
@@ -43,14 +44,11 @@ ul li {
 ul li a {
   text-decoration: none;
   font-size: 2rem;
-  color: rgb(16, 165, 16);
-
+  color: yellow;
   width: 100%;
 }
 
 ul li a:hover {
-  background-color: black;
-  border-radius: 10px;
   font-weight: 800;
   padding: 1rem;
 }
@@ -59,21 +57,50 @@ main > section:first-child {
   width: 100%;
   padding: 2rem;
 }
-
+.banner {
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMjQtYWstMjY4MV8yLmpwZw.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+  color: white;
+}
+.banner p {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.banner h1,
+.banner p {
+  transform: rotateY(180deg);
+  color: black;
+}
 section {
   display: flex;
   justify-content: center;
   width: 30%;
+  height: 30rem;
 }
 
 article {
   flex: 1;
-  /* border: 0.1rem whitesmoke;
-  box-shadow: 0.1rem 0.2rem 0.1rem rgb(202, 202, 202); */
   margin: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
 }
 article p {
   padding: 1rem;
+}
+section img {
+  max-width: 50%;
+  height: 10rem;
+  flex: 1;
+  border-radius: 10px;
+  text-align: center;
+  margin: 1rem;
 }
 .dishes {
   display: flex;
@@ -85,6 +112,7 @@ footer {
   justify-content: center;
   align-items: end;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer .copyright {
@@ -99,4 +127,9 @@ footer img {
   max-width: 5%;
   height: fit-content;
   text-align: right;
+}
+footer .copyright > div {
+  width: 80%;
+  height: 0.1rem;
+  background-color: green;
 }
